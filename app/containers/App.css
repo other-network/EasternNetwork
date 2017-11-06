@@ -1,0 +1,146 @@
+/* common */
+.normal, .container {
+    height:512px;
+}
+
+.logo {
+    color: #ffffff;
+    align-self: center;
+}
+
+.logo:before {
+    content: 'Eastern';
+    font-size: 30px;
+    display: block;
+    line-height: 29px;
+    font-weight: bold;
+}
+.logo:after {
+    content: 'Network';
+    font-size: 20px;
+    margin-left: 49px;
+    line-height: 16px;
+}
+
+.button {
+    text-align: center;
+    color: white;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.btnPrimary {
+    background-color: transparent;
+}
+
+.btnDefault {
+    background-color: white;
+    color: black;
+}
+
+/* before login */
+.empty, .button, input[type='text'], input[type='email'], input[type='password']{
+    border-color: white;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 10px;
+    height: 25px;
+    line-height: 25px;
+    text-decoration: none;
+    padding: 2px 6px 3px;
+}
+
+.description, .empty, .notice {
+    border-radius: 6px;
+    border-style: hidden;
+    border-width: 1px;
+    background-color: rgba(0,0,0,0.2);
+    text-align: center;
+    width: auto;
+    height: 27px;
+    line-height: 27px;
+    padding: 2px 6px 3px;
+    font-size: xx-small;
+    margin-top: 10px;
+}
+
+.container > .logo {
+    height: 204px;
+    padding-top: 76px;
+}
+
+.container {
+    justify-content: space-around;
+}
+
+.box {
+    height: 308px;
+    width: 169px;
+}
+
+.container, .box {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.description {
+    font-size: xx-small;
+    line-height: initial;
+    text-align: left;
+}
+
+.empty {
+    visibility: hidden;
+}
+
+.topleft {
+    position: absolute;
+    text-decoration: none;
+    left: 15px;
+    top: 15px;
+}
+
+/* after login */
+
+.bottomleft {
+    position: absolute;
+    text-decoration: none;
+    left: 15px;
+    bottom: 15px;
+}
+
+.main {
+    padding: 35px 0;
+}
+
+.main > h2, p {
+    padding: 0 27px;
+}
+
+.main > p {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 21px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.location {
+    display: inline-block;
+    background: no-repeat center/100%  url(../../chrome/assets/img/location.png);
+    width: 24px;
+    height: 36px;
+    margin-right: 5px;
+}
+
+.section {
+    padding: 0 27px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+}
